@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class OrderController {
-    private OrderService os;
+    private final OrderService os;
 
     @Autowired
     public OrderController(OrderService os) {
