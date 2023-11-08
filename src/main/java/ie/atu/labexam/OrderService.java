@@ -1,7 +1,10 @@
 package ie.atu.labexam;
 
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 
+@Service
 public class OrderService {
     private Product product;
 
