@@ -7,15 +7,14 @@ import java.util.ArrayList;
 @Service
 public class OrderService {
     private Product product;
-
     ArrayList<Product> products = new ArrayList<>();
 
-    public void createOrder(Product product){
-        products.add(product);
-        System.out.println("Order Added " + product.getProductId());
+    public boolean createOrder(Product product){
+        return products.add(product);
     }
 
-    public int getOrderById() {
+    public int getOrderById(){
+        System.out.println(product.getProductId());
         return product.getOrderId();
     }
 }
